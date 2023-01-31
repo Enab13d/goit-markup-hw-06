@@ -55,10 +55,44 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+                <h2 class="feedback-title" id="feedback-header">Leave your contacts and we will call you back</h2>
+                <form class="feedback-form">
+                <div class="form-field">
+                    <input type="text" id="username" name="username" class="feedback-input">
+                    <label for="username" class="feedback-label">Name</label>
+                    <svg class="feedback-icon">
+                      <use href="./images/icons.svg#icon-person-input"></use>
+                    </svg>
+                  </div>
+                  <div class="form-field">
+                    <input type="tel" id="phone" name="phone" class="feedback-input">
+                    <label for="phone" class="feedback-label">Phone</label>
+                    <svg class="feedback-icon">
+                      <use href="./images/icons.svg#icon-phone-input"></use>
+                    </svg>
+                  </div>
+                  <div class="form-field">
+                    <input type="email" id="email" name="email" class="feedback-input">
+                    <label for="email" class="feedback-label">Email</label>
+                    <svg class="feedback-icon">
+                      <use href="./images/icons.svg#icon-email-input"></use>
+                    </svg>
+                  </div>
+                  <div class="form-field">
+                    <textarea id="comment" name="comment" class="feedback-input" placeholder="Text input"></textarea>
+                    <label for="comment" class="feedback-label">Comment</label>
+                   </div>
+                   <div class="agreement-field">
+                  <input type="checkbox" id="user-agreement" name="user-agreement" value="accept" class="agreement-input">
+                  <label for="user-agreement" class="agreement-checkbox">I accept the terms and conditions of the Privacy Policy</label>
+                </div>
+                <button type="submit" class="button feedback-button">Send</button>
+              </form>
               <button class="modal-button" data-modal-close type="button">
                 <svg class="modal-icon">
                   <use href="./images/icons.svg#close-cross"></use>
                 </svg>
+               
               </button>
             </div>
           </div>
@@ -411,6 +445,18 @@
             </li>
           </ul>
         </div>
+        <form class="subscription-form">
+          <div role="group" aria-labelledby="subscription-header" class="subscription-field">
+              <label for="email" class="subscription-label">Subscribe</label>
+              <input type="email" class="subscription-input" name="email" id="email" placeholder="E-mail">
+          </div>
+          <button type="submit" class="button subscription-button">
+            Subscribe
+              <svg class="subscription-icon">
+                <use href="./images/icons.svg#icon-telegram-submit"></use>
+              </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
