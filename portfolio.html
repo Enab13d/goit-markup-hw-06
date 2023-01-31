@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" lang="en" />
     <title>Web Studio</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -340,6 +340,24 @@
             </li>
           </ul>
         </div>
+        <form class="subscription-form">
+          <div class="subscription-field" role="group">
+            <label class="subscription-label" for="mail">Subscribe</label>
+            <input
+              class="subscription-input"
+              id="mail"
+              name="email"
+              type="email"
+              placeholder="E-mail"
+            />
+          </div>
+          <button class="button subscription-button" type="submit">
+            Subscribe
+            <svg class="subscription-icon">
+              <use href="./images/icons.svg#icon-telegram-submit"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
