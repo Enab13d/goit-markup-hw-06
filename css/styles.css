@@ -250,6 +250,7 @@ body {
 }
 .feedback-input:focus {
   border-color: var(--primary-brand-color);
+  outline: none;
 }
 .feedback-input:focus~.feedback-icon {
   fill: var(--primary-brand-color);
@@ -300,7 +301,7 @@ body {
   margin-right: 8px;
   border: 1.25px solid var(--header-text-color);
   border-radius: 2px;
-  background-image: url(/images/check.svg);
+  background-image: url(../images/check.svg);
   background-position: 50% 50%;
   background-origin: content-box;
   background-size: contain;
